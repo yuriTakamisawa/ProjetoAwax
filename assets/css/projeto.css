@@ -6,8 +6,15 @@
 
 body {
     font-family: 'Montserrat', 'Arial', 'Helvetica', 'sans-serif';
-    font-size: 13px;    
+    font-size: 13px;   
+    overflow-x: hidden; 
 }
+
+
+
+
+
+
 
 /* cabeçalho */
 
@@ -27,6 +34,13 @@ header {
 
 /* cabeçalho fim */
 
+
+
+
+
+
+
+
 /* logo cabeçalho */
 .logo {
     width: 100px;
@@ -39,6 +53,13 @@ header {
 } 
 
 /* logo cabeçalho fim */
+
+
+
+
+
+
+
 
 /* menu */
 
@@ -78,6 +99,16 @@ header {
 }
 
 /* menu fim */
+
+
+
+
+
+
+
+
+
+
 
 /* banner */
 
@@ -128,8 +159,113 @@ header {
     margin-top: 20px;
 }
 
-.banner a {
-    display: block;
+
+
+.banner a:hover {
+    background-color: #c79154;
+    font-size: 13px;
+}
+
+.banner .slidersPointers{
+    width: 100vw;
+    height: 20px;
+    
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner  .pointer .active{
+    background-color: #b28756;
+}
+
+/* banner fim  */
+
+
+
+
+
+
+
+
+
+
+/* modelo titulos e subtitulos */
+
+
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #CCC;
+  }
+  
+  .default .sectionTitle,
+  .default .sectionDesc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .default .sectionTitle {
+    font-size: 20px;
+  }
+  
+  .default .sectionDesc {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .default .sectionBody {
+    max-width: 1140px;
+    margin: auto;
+    min-height: 100px;
+    
+  }
+  
+  .default.light {
+    background-color: #f7f7f7;
+  }
+  
+  .default.light .sectionTitle {
+    color: black;
+  }
+
+  .default .light .sectionTitle,
+  .default .light .sectionBody{
+    color: black;
+  }
+
+  
+  
+  .default.dark {
+    background-color: black;
+  }
+  
+  .default.dark .sectionTitle {
+    color: white;
+  }
+
+  .default.dark .sectionTitle,
+    .default.dark .sectionBody {
+  color: white;
+}
+
+.button {
+    display: inline-block;
     background-color: #b28756;
     color: white;
     text-transform: uppercase;
@@ -141,11 +277,50 @@ header {
     border-radius: 15px;
 }
 
-.banner a:hover {
-    background-color: #c79154;
-    font-size: 13px;
+.button a {
+    text-decoration: none;
+    color: inherit;
 }
-    
 
+.button:hover {
+    background-color: #c79154;
+}
+  
+
+
+  /* modelo titulos e subtitulos fim */
+
+
+
+
+
+
+
+  /* about us */
+
+.sectionAboutUs {
+    display: flex;
+
+}
+
+.sectionAboutUsLeft{
+    flex: 1;
+}
+
+.sectionAboutUsLeft p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.sectionAboutUsRight {
+    width: 520px;
+    text-align: center;
+    
+}
+
+.sectionAboutUsRight img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
 
 
