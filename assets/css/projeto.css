@@ -433,3 +433,116 @@ header {
     width: 280px;
 
 }
+
+.sectionProjectsFotoArea {
+    width: 260px;
+    margin: 10px;
+    height: 160px;
+}
+
+.sectionProjectsFotoArea img {
+    width: inherit;
+    height: inherit;
+}
+
+.sectionProjectsFotoInfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.sectionProjectsFotoInfo h5 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+} 
+
+
+.sectionProjectsFotoArea:hover .sectionProjectsFotoInfo {
+    display: flex;
+}
+
+/* Our Projects Fim */
+
+
+
+
+
+
+
+
+/* Our Team */
+
+.bgTeam {
+    background-image: url(../images/media/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.sectionTeamArea {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sectionTeam {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.sectionTeam .sliders{
+    width: 1000vw;
+    height: 100%;
+    
+    
+}
+
+.sectionTeam .slide{
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: white;
+    margin-right: 20px;
+
+}
+
+.sectionTeam .slidearea{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+.sectionTeamArea .slidersPointers{
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTeamArea .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.sectionTeamArea  .pointer .active{
+    background-color: #b28756;
+}
