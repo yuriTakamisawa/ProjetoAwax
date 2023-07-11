@@ -479,6 +479,7 @@ header {
 
 /* Our Team */
 
+    /* areas dos cards */
 .bgTeam {
     background-image: url(../images/media/bg.jpg);
     background-size: cover;
@@ -516,12 +517,13 @@ header {
 }
 
 .sectionTeam .slidearea{
+    padding: 30px;
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: black;
 }
 
 
@@ -546,3 +548,654 @@ header {
 .sectionTeamArea  .pointer .active{
     background-color: #b28756;
 }
+
+    /* area dos cards fim */
+
+    /* conteudo dos cards */
+
+.sectionTeamAvatar {
+    width: 150px;
+    height: auto;
+}
+
+.sectionTeamName {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.sectionTeamRole {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.sectionTeamSocial {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sectionTeamSocial a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #CCC;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.sectionTeamSocial a:hover {
+    background-color: #b28756;
+}
+
+/* Our Team Fim*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Client Reviews */
+
+.sectionClientReviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionClientReview {
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.sectionClientReviewAvatar img {
+    width: 150px;
+    height: auto;
+}
+
+.sectionClientReviewName {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.sectionClientReviewRole {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.sectionClientReviewText {
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+    text-align: center;
+    width: 730px;
+    margin-bottom: 50px;
+}
+
+
+
+.sectionClientReviews .slidersPointers{
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.sectionClientReviews .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.sectionClientReviews  .pointer .active{
+    background-color: #b28756;
+}
+
+/* Client Reviews Fim */
+
+
+
+/* Client Logos */
+
+.sectionClientLogos {
+    height: 160px;
+    background-color: white;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2), 0px -5px 5px -5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+}
+
+
+.sectionClientLogosImages{
+    flex: 1;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.sectionClientLogosImage  {
+    padding-right: 100px;
+    width: 200px;
+    height: auto;
+}
+
+
+/* Client Logos Fim */
+
+
+
+
+
+
+
+/* Prices */
+
+    /* area cards */
+
+
+.sectionPrices {
+    overflow: hidden;
+    max-width: 1160px;
+    margin: auto;
+    
+}
+
+
+.sectionPrices .sliders{
+    width: 1000vw;
+    height: 100%;
+    
+    
+}
+
+.sectionPrices .slide{
+    width: 250px;
+    height: 340px;
+    min-height: 300px;
+    display: inline-block;
+    background-color: white;
+    margin-right: 20px;
+
+}
+
+.sectionPrices .slidearea{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+    /* area cards fim */
+
+    /* conteudo prices */
+
+.sectionPriceTitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.sectionPriceValor {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sectionPriceTempo {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.sectionPriceFeatures ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+.sectionPriceFeatures li{
+    font-size: 12px;
+    padding-bottom: 20px;
+    
+    
+}
+
+.sectionPriceFeatures hr {
+    width: 10px;
+    transform: translateY(-7px);
+}
+
+
+
+
+.sectionPriceButton {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    
+}
+
+.sectionPriceButton a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sectionPriceButton:hover {
+    background-color: #c79154;
+}
+
+     /* conteudo prices Fim*/
+
+.sectionPricesEnd {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+.sectionPricesEnd hr{
+    background-color: #333;
+
+}
+
+
+/* Prices Fim*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Premium */
+
+.sectionPremium {
+    overflow:hidden;
+}
+
+.premium {
+    background-color:#FFF !important;
+    
+}
+.premium .sectionBody {
+    max-width:initial;
+}
+
+.sectionPremium .sliders {
+    width:1000vw;
+    height:100%;
+}
+
+.sectionPremium .slide {
+    width:100vw;
+    height:100%;
+    display:inline-block;
+}
+
+.sectionPremium .slidearea {
+    display:flex;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+    max-width:1140px;
+    border-bottom:1px solid #CCC;
+    margin:auto;
+    padding-bottom:40px;
+}
+
+.sectionPremiumLeft {
+    flex: 1;
+    
+}
+
+.sectionPremiumLeft img{
+    height: 400px;
+    width: auto;
+}
+
+.sectionPremiumRight {
+    flex: 1;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.sectionPremiumRight ul {
+    list-style: none;
+}
+
+.sectionPremiumTitleList {
+    margin-top: 50px;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style-image: url(../images/check.png);
+    padding-left: 20px;
+}
+
+.sectionPremiumDescList {
+    font-size: 13px;
+    color: #999;
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+.sectionPremiumListItem {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #999;
+    
+}
+
+
+.sectionPremium .slidersPointers {
+    display:flex;
+    height:20px;
+    width:100vw;
+    margin-top:40px;
+    align-items: center;
+    justify-content: center;
+}
+.sectionPremium .pointer {
+    width:15px;
+    height:15px;
+    border:2px solid #B28756;
+    margin-right:5px;
+    cursor:pointer;
+    margin-left:5px;
+    border-radius:8px;
+}
+.sectionPremium .pointer.active {
+    background-color:#B28756;
+}
+.sectionPremiumButton {
+    display: inline-block;
+    text-align: center;
+    background-color: #B28756;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+
+.sectionPremiumButton a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sectionPremiumButton:hover {
+    background-color: #c79154;
+}
+
+
+/* Premium Fim*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Some Facts */
+
+.sectionAboutWorks {
+    display: flex;
+}
+
+.sectionAboutWork {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    display: flex; /* Adicionado */
+    flex-direction: column; /* Adicionado */
+    align-items: center; /* Adicionado */
+}
+
+
+
+.sectionAboutWork h3 {
+    font-size: 45px;
+    color: #B28756;
+    font-weight: bold;
+    
+}   
+
+.sectionAboutWork .barra {
+    width: 18px;
+    height: 3px;
+    background-color: #999;
+    margin: auto;
+    transform: translateY(6px);
+}
+
+.sectionAboutWork h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+
+.sectionAboutWorks p {
+    width: 170px;
+    padding-top: 15px;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    margin: auto;
+    align-self: flex-end; 
+}
+
+/* Some Facts Fim*/
+
+
+
+
+
+
+
+
+
+/* Compartilhe */
+
+.sectionShare {
+    height: 80px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.2), 0px -5px 5px -5px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+.sectionShareCompartilhe {
+    display:flex;
+    align-items:center;
+    margin-right:40px;
+}
+.sectionShareCompartilhe img {
+    margin-right:10px;
+}
+.sectionShareItem {
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    font-size:13px;
+    margin-right:20px;
+    font-weight: 600;
+}
+.sectionShareIcone {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    width:30px;
+    border-radius:15px;
+    margin-right:5px;
+    background-color:#CCC;
+}
+.sectionShareIcone img {
+    height:12px;
+}
+.sectionShareIcone.twitter {
+    background-color:#34c5f0;
+}
+.sectionShareIcone.linkedin {
+    background-color:#127cb4;
+}
+.sectionShareIcone.facebook {
+    background-color:#336297;
+}
+.sectionShareIcone.googleplus {
+    background-color:#e74237;
+}
+.sectionShareIcone.pinterest {
+    background-color:#b71c29;
+}
+
+
+/* Compartilhe Fim*/
+
+
+
+
+
+
+
+
+
+
+/* Contact Us */
+
+.sectionContactUs {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionContactUs input[type=text],
+.sectionContactUs input[type=email],
+.sectionContactUs textarea {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid #CCC;
+    background: transparent;
+    outline: 0;
+    
+}
+
+.sectionContactUs textarea {
+    resize: none;
+    height: 100px;
+}
+
+.sectionContactUsForm1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sectionContactUsForm1 input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.sectionContactFormItem button {
+    display: inline-block;
+    background-color: #b28756;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: none;
+}
+
+.sectionContactFormItem button:hover {
+    background-color: #c79154;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
