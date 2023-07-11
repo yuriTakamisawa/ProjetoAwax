@@ -861,11 +861,13 @@ header {
 }
 
 .premium {
-    background-color:#FFF !important;
+    background-color:white !important;
+    
     
 }
 .premium .sectionBody {
     max-width:initial;
+    
 }
 
 .sectionPremium .sliders {
@@ -958,7 +960,6 @@ header {
 }
 .sectionPremiumButton {
     display: inline-block;
-    text-align: center;
     background-color: #B28756;
     color: #FFF;
     text-transform: uppercase;
@@ -968,6 +969,10 @@ header {
     padding: 10px 30px;
     margin-top: 30px;
     border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
@@ -1004,9 +1009,9 @@ header {
     flex: 1;
     text-align: center;
     padding: 15px;
-    display: flex; /* Adicionado */
-    flex-direction: column; /* Adicionado */
-    align-items: center; /* Adicionado */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 
@@ -1183,6 +1188,7 @@ header {
     background-color: #c79154;
 }
 
+/* Contact us Fim */
 
 
 
@@ -1199,3 +1205,247 @@ header {
 
 
 
+/* Mapa */
+
+.sectionMap {
+    background-image: url(../images/media/mapa.png);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sectionMapArea {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+.sectionMapInfo {
+    width: 50%;
+    padding: 30px;
+    background-color: white;
+
+}
+
+.sectionMapInfoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sectionMapInfoItemImg {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #999;
+    border-radius: 15px;
+    margin-right: 15px;
+    color: #333;
+}
+
+.sectionMapInfoItemImg img {
+    width: 15px;
+    height: auto;
+}
+
+
+/* Mapa Fim */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.sectionFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionFooterLeft{
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    flex: 1;
+    height: 200px;
+    margin-right:30px ;
+    
+    
+}
+.sectionFooterMiddle{
+    flex: 1;
+}
+
+.sectionFooterMiddle p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #999;
+}
+
+.sectionFooterRight {
+    width: 330px;
+    text-align: center;
+    align-self: flex-end; 
+    
+}
+
+.sectionFooterRight  {
+    height: 200px;
+    width: 350px;
+    background-color: #555;
+    
+    margin-left: 30px;
+    
+}
+
+
+.sectionFooterSocial {
+    display: flex;
+    
+}
+
+.sectionFooterSocial a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #333;
+    border-radius: 16px;
+    margin-right: 7px;
+}
+
+.sectionFooterSocial a:last-child
+{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.sectionFooterSocial p {
+    position: absolute;
+    transform: translateY(-8px  );
+}
+
+.sectionFooterSocial a:hover {
+    background-color: #b28756;
+}
+
+.sectionFooterCopyright {
+    position: absolute;
+    bottom: 0;
+}
+
+.sectionFooterCopyright p {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+.sectionFooterButton button {
+    display: inline-block;
+    background-color: #b28756;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 180px;
+    padding: 13px 30px;
+    margin-top: 32px;
+    border-radius: 20px;
+    border: none;
+}
+
+.sectionFooterButton button:hover {
+    background-color: #c79154;
+}
+
+
+.sectionFooterInput input[type=email] {
+
+    height: 40px;
+    margin-top: 40px;
+    border: 0;
+    border-bottom: 1px solid #DDD;
+    background: transparent;
+    outline: 0;
+    color: lightgray;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* Footer Fim */
+
+/* Botao voltar para cima da pagina */
+
+.rollBackUpButton {
+    position: absolute;
+    width:80px;
+    height:80px;
+    background-color:#B28756;
+    border-radius:40px;
+    margin-left: 50px;
+    transform: translateY(-30px);
+}
+
+
+.rollBackUpButton a {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    display: inline-block;
+    padding-left: 20px;;
+}
+
+/* Botao voltar para cima da pagina Fim*/
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+
+
+@media(min-width:450px) and (max-width:800px) {
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+}
