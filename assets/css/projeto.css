@@ -70,6 +70,10 @@ header {
 
 }
 
+.menuOpener {
+    display: none;
+}
+
 .menu ul ,
 .menu li {
     list-style: none;
@@ -323,6 +327,31 @@ header {
     box-shadow: 0px 5px 10px #333;
 }
 
+
+    .buttonAboutUs {
+    
+        display: inline-block;
+        background-color: #b28756;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin-top: 30px;
+        border-radius: 15px;
+    
+    
+    }
+    .buttonAboutUs a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .buttonAboutUs:hover {
+        background-color: #c79154;
+    }
+    
 /* about us fim  */
 
 
@@ -1082,6 +1111,8 @@ header {
 .sectionShareCompartilhe img {
     margin-right:10px;
 }
+
+
 .sectionShareItem {
     display:flex;
     align-items:center;
@@ -1209,7 +1240,7 @@ header {
 
 .sectionMap {
     background-image: url(../images/media/mapa.png);
-    height: 300px;
+    height: 330px;
     background-size: cover;
     background-position: center;
     padding-top: 30px;
@@ -1412,7 +1443,7 @@ header {
     background-color:#B28756;
     border-radius:40px;
     margin-left: 50px;
-    transform: translateY(-30px);
+
 }
 
 
@@ -1434,18 +1465,829 @@ header {
 
 
 
-/* Responsividade */
+/* Responsividade  Tablet*/
 
 
 @media(min-width:450px) and (max-width:800px) {
+
+    /* menu Tablet*/
     nav {
-        display: none;
+        /* display: none; */
         position: absolute;
         z-index: 99;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.9);
         width: 70vw;
         height: calc(100vh - 100px);
         top: 100px;
         right: 0;
     }
+
+    .menuOpener {
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+
+    .logo{
+        margin-left: 30px;
+    }
+
+
+
+    .menu ul {
+        flex-direction: column;
+
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 27px;
+        margin-left: 30px;
+        border: none;
+
+    }
+
+    
+    .menu li.active {
+        border: none;
+        color: #B28756;
+    }
+
+    /* menu Tablet fim */
+
+
+
+
+
+
+    /* about Us Tablet*/
+
+    .sectionAboutUs {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .sectionAboutUsLeft {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .sectionAboutUsLeft p{
+        text-align: justify;
+    }
+
+    
+
+    .sectionAboutUsRight {
+        width: auto;
+    }
+
+    .buttonAboutUs {
+        width: 150px;
+        margin: 0 280px;
+        display: flex;
+        
+     }
+     .buttonAboutUs a {
+        padding-right: 0;
+        
+     }
+
+     /* about Us Tablet Fim*/
+
+
+
+
+
+     /* Services Tablet */
+
+     .sectionServices {
+        flex-wrap: wrap;
+
+    }
+
+    .sectionService {
+        min-width:50% ;
+        margin-bottom: 20px;
+        
+    }
+
+    .sectionService:first-child {
+        border-left: none;
+    }
+
+
+    /* Services Tablet Fim */
+
+
+
+    /* Our Team */
+    .sectionTeam {
+        overflow: hidden;
+        max-width: 580px;
+        margin: auto;
+    }
+    /* Our Team Fim */
+
+
+
+    /* Client Logos Tablet*/
+
+    .sectionClientLogosImages {
+        margin-top: 50px;
+        margin-bottom: 50px;
+       
+    }
+
+    .sectionClientLogosImage {
+        padding-right: 0;
+        padding-left: 20px;
+        width: 160px;
+        height: auto;
+    }
+    
+    .sectionClientLogosImage:nth-child(-n+3) {
+        display: none;
+    }
+
+      /* Client Logos Tablet Fim*/
+
+
+      /* Prices Tablet */
+
+    .sectionPrices {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin-left: 120px;
+    }   
+
+    .sectionPrices .slide{
+        
+        margin-bottom: 20px;
+    }
+
+    /* Prices Tablet Fim*/
+
+
+
+    /* Premium Tablet */
+
+    .sectionPremium .slidearea {
+        flex-direction: column;
+        margin: auto;
+        
+    }
+
+    .sectionPremiumLeft img{
+        height: 350px;
+        width: auto;
+    }
+
+    .sectionPremiumRight {
+        justify-content: center;
+        margin-left: 150px;
+        margin-right: 50px;
+    }
+
+    
+
+     /* Premium Tablet Fim*/
+
+
+     /* Some Facts  Tablet*/
+
+    .sectionAboutWorks {
+        max-width: 442px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+
+    .sectionAboutWork h3 {
+        font-size: 50px;
+        
+        
+    }   
+    
+    .sectionAboutWork .barra {
+        width: 19px;
+    }
+    
+    .sectionAboutWork h4 {
+        font-size: 19px;
+    
+    }
+    
+    .sectionAboutWorks p {
+        font-size: 14px;
+       
+    }
+
+    /* Some Facts Tablet Fim */
+
+
+    /* contact us tablet */
+
+    .sectionContactUsForm1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sectionContactUs textarea {
+        margin-top: 10px;
+    }
+    
+    /* contact us tablet Fim*/
+
+
+
+    /* Mapa Tablet */
+
+
+    .sectionMap{
+        height: 390px;
+        padding-left: 30px;
+        padding-right: 30px;
+        overflow: hidden;
+    }
+
+    .sectionMapArea{
+        width: auto;
+    }
+
+    .sectionMapInfoItem {
+        margin-bottom: 30px;
+    }
+
+    .sectionMapInfoItem:last-child {
+        margin-bottom: 0;
+    }
+
+    .sectionMapInfo {
+        width: auto;
+        
+        
+    }
+
+    .rollBackUpButton {
+        width:70px;
+        height:70px;
+    }
+
+    .rollBackUpButton a {
+        font-size: 50px;
+        padding-top: 5px;
+        padding-left: 20px;;
+    }
+
+    /* Mapa Tablet Fim*/
+    
+    /* Footer Tablet */
+
+    .sectionFooter {
+        flex-direction: column;
+    }
+
+    
+    .sectionFooterLeft{
+        padding-bottom: 20px;
+        
+    }
+
+    .sectionFooterMiddle{
+        justify-content: center;
+        text-align: justify;
+        margin: 20px;
+    }
+    
+    .sectionFooterMiddle p{
+        font-size: 13px;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+    }
+    
+    .sectionFooterMiddle p {
+        font-size: 14px;
+        
+    }
+    
+    .sectionFooterRight {
+        margin: auto;
+        width: 300px auto;    
+        
+        
+    }
+    
+    
+    
+    .sectionFooterCopyright p {
+        margin-left: 8px;
+       
+        text-align: center;
+    }
+
+
+    /* Footer Tablet Fim*/
+    
+
 }
+    /* Responsividade  Tablet Fim*/
+
+
+    /* Responsividade Mobile */
+
+    @media(max-width:450px) {
+
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* menu Mobile*/
+        nav {
+            /* display: none; */
+            position: absolute;
+            z-index: 99;
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 80vw;
+            height: calc(100vh - 100px);
+            top: 100px;
+            right: 0;
+        }
+    
+        .menuOpener {
+            display: block;
+            width: 45px;
+            margin-right: 30px;
+        }
+    
+        .logo{
+            margin-left: 30px;
+        }
+    
+    
+    
+        .menu ul {
+            flex-direction: column;
+    
+        }
+    
+        .menu li a {
+            font-weight: bold;
+            height: 60px;
+            font-size: 20px;
+            margin-left: 30px;
+            border: none;
+    
+        }
+    
+        
+        .menu li.active {
+            border: none;
+            color: #B28756;
+        }   
+
+        .banner h1 {
+            font-size: 30px;
+        }
+
+        .banner h2 {
+            font-size: 17px;
+        }
+
+        .button {
+            font-size: 20px;
+            padding-top: 10px;
+        }
+    
+        /* menu Mobile fim */
+    
+    
+    
+    
+    
+    
+        /* about Us Mobile*/
+    
+        .sectionAboutUs {
+            display: flex;
+            flex-direction: column;
+        
+        }
+    
+        .sectionAboutUsLeft {
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+    
+        .sectionAboutUsLeft p{
+            text-align: justify;
+            
+        }
+    
+        
+    
+        .sectionAboutUsRight {
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .sectionAboutUsRight img {
+            width: 100%;
+        }
+    
+        .buttonAboutUs {
+            
+           width: 150px;
+           margin: 0 80px;
+           display: flex;
+           
+        }
+    
+         /* about Us Mobile Fim*/
+    
+    
+    
+    
+    
+         /* Services Mobile */
+    
+         .sectionServices {
+            flex-wrap: wrap;
+    
+        }
+    
+        .sectionService {
+            min-width:100% ;
+            margin-bottom: 20px;
+            
+        }
+    
+        .sectionService:first-child {
+            border-left: none;
+        }
+    
+    
+        /* Services Mobile Fim */
+
+        /* Projects Mobile */
+        .sectionProjectsFilters {
+            margin-left: 30px;
+            margin-right: 30px;
+            
+        }
+
+        
+
+        
+
+        .sectionProjectsFoto {
+            width: 320px;
+        }
+
+        .sectionProjectsFotoArea {
+            width: 300px;
+            height: 200px;
+        }
+
+        /* Projects Mobile  Fim */
+    
+    
+        /* Our Team Mobile*/
+        .sectionTeam {
+            overflow: hidden;
+            max-width: 280px;
+            margin: auto;
+        }
+        /* Our Team  Mobile Fim */
+    
+        /* Client Reviews Mobile */
+
+        .sectionClientReviewText {
+            margin-left: 30px;
+            margin-right: 30px;
+            width: auto;
+            text-align: center;
+            
+        }
+
+        .sectionClientReview {
+            margin-top: 0px;
+            
+        }
+    
+        /* Client Logos Mobile*/
+    
+        .sectionClientLogosImages {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 30px;
+            margin-right: 30px;
+            display: flex;
+           
+        }
+    
+        .sectionClientLogosImage {
+            padding-right: 0;
+            padding-left: 20px;
+            width: 160px;
+            height: auto;
+        }
+        
+        .sectionClientLogosImage:nth-child(-n+4) {
+            display: none;
+        }
+    
+          /* Client Logos Mobile Fim*/
+    
+    
+          /* Prices Mobile */
+    
+        .sectionPrices {
+            display: flex;
+            overflow: hidden;
+            max-width: 280px;
+            margin: auto;
+        }   
+    
+        .sectionPrices .slide{
+            width: 280px;
+            margin-bottom: 20px;
+        }
+    
+        /* Prices Mobile Fim*/
+    
+    
+    
+        /* Premium Mobile */
+    
+        .sectionPremium .slidearea {
+            flex-direction: column;
+            margin: auto;
+            
+        }
+    
+        .sectionPremiumLeft img{
+            margin-left: 20px;
+            height: 240px;
+            width: auto;
+        }
+    
+        .sectionPremiumRight {
+            justify-content: center;
+            margin-left: 100px;
+            margin-right: 40px;
+        }
+    
+        
+    
+         /* Premium Mobile Fim*/
+    
+    
+         /* Some Facts  Mobile*/
+    
+        .sectionAboutWorks {
+            max-width: 442px;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+
+        .sectionAboutWork:last-child {
+            display: none;
+        }
+
+        
+    
+    
+        .sectionAboutWork h3 {
+            font-size: 50px;
+            
+            
+        }   
+        
+        .sectionAboutWork .barra {
+            width: 19px;
+        }
+        
+        .sectionAboutWork h4 {
+            font-size: 19px;
+        
+        }
+        
+        .sectionAboutWorks p {
+            font-size: 14px;
+           
+        }
+    
+        /* Some Facts Mobile Fim */
+
+
+        /* Share Mobile */
+
+        .sectionShare {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height: 150px;
+        }
+
+        .sectionShareCompartilhe {
+            width:100vw;
+            margin:0;
+            
+            justify-content: center;
+        }
+
+        .sectionShareCompartilhe img {
+           display: none;
+        }
+
+        .sectionShareCompartilhe p {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .sectionShareItem {
+            margin: auto;
+            flex-direction: column;
+        }
+
+        .sectionShareIcone {
+            height:31px;
+            width:31px;
+            margin-right:2px;
+        }
+
+        /* .sectionShareItem:first-child {
+            margin-right: 30px;
+        }
+        .sectionShareItem:last-child {
+            margin-left: 30px;
+        } */
+
+    
+    
+        /* contact us Mobile */
+
+
+        .sectionContactUs {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    
+        .sectionContactUsForm1 {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .sectionContactUs textarea {
+            margin-top: 20px;
+
+            height: 30px;
+
+        }
+
+        .sectionContactUs input[type=text],
+        .sectionContactUs input[type=email]
+        {
+            margin-bottom: 20px;
+        }
+
+        .sectionContactFormItem button {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        
+        /* contact us Mobile Fim*/
+    
+    
+    
+        /* Mapa Mobile */
+    
+    
+        .sectionMap{
+            height: 600px;
+            padding: 0;
+            padding-bottom: 250px;
+            overflow: hidden;
+            
+        }
+
+        .sectionMap{           
+        }
+    
+        .sectionMapArea{
+            width: auto;
+        }
+    
+        .sectionMapInfoItem {
+            margin-bottom: 30px;
+        }
+    
+        .sectionMapInfoItem:last-child {
+            margin-bottom: 0;
+        }
+    
+        .sectionMapInfo {
+            width: auto;
+            
+            
+        }
+    
+        .rollBackUpButton {
+            position: absolute;
+            width:35px;
+            height:35px;
+            background-color:#B28756;
+            border-radius:40px;
+            transform: translateY(250px);
+            right: 20px;
+        }
+
+
+
+        .rollBackUpButton a {
+            font-size: 34px;
+            
+            padding-left: 8px;;
+        }
+    
+        /* Mapa Mobile Fim*/
+        
+        /* Footer Mobile */
+
+
+        .default.dark.footer {
+
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 0;
+            justify-content: center;
+        text-align: center;        }
+    
+        .sectionFooter {
+            flex-direction: column-reverse;
+        }
+    
+        
+        .sectionFooterLeft{
+            padding-bottom: 20px;
+            
+            margin-left: 10px;
+            margin-right: 0px ;
+        }
+
+        .sectionFooterSocial {
+            display: flex;
+            position: relative;
+            transform: translateY(-310px);
+            margin-bottom: 0;
+        }
+    
+        .sectionFooterMiddle{
+            justify-content: center;
+            text-align: justify;
+            margin: 30px;
+            margin-bottom: 0;
+        }
+        
+        .sectionFooterMiddle p{
+            font-size: 13px;
+            margin-top: 80px;
+          
+            
+        }
+        
+       
+        .sectionFooterRight {
+            margin-top: 0;
+            margin: auto;
+            width: 300px ;    
+            
+            
+        }
+        
+        .sectionFooterCopyright {
+            margin-left:30px ;
+            margin-right: 30px;
+        }
+        
+        
+        .sectionFooterCopyright p {
+            padding-bottom: 20px;
+            font-size: 10px;
+            
+        }
+
+        /* Footer Mobile Fim */
+    }
